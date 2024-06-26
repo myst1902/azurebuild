@@ -1,0 +1,80 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "tagging":{
+        "value": {
+          "CostCenter": "AVDTEST",
+          "Environment": "Test"
+        }
+      },    
+      "rdshPrefix": {
+        "value": "VMwhiskyTAVDMXX"
+      },
+      "rdshNumberOfInstances": {
+        "value": 2
+      },
+      "rdshInitialNumber": {
+        "value": 1
+      },
+      "hostpoolName": {
+        "value": "vdpool-whisky-weu-h-avd-01"
+      },
+      "hostpoolToken": {
+        "value": ""
+      },
+      "aadJoin": {
+        "value": false
+      },
+      "avdAdminUsername": {
+        "value": "wvd_localadmin"
+      },
+      "avdAdminPassword": {
+        "reference":{
+          "keyVault": {
+            "id": ""
+          },
+          "secretName": "wvdlocaladmin"
+        }
+      },
+      "ImagePublisher": {
+       "value": "microsoftwindowsdesktop"
+        },
+     "ImageOffer":{
+         "value": "windows-11"
+     },
+     "windowsSKU": {
+      "value": "win11-23h2-avd"
+    },
+     "avdVmSize":{
+      "value": "Standard_D2s_v3"
+     },
+      "vnetRG": {
+        "value": "AZ-T-NET-RG01"
+      },
+      "virtualNetworkName": {
+        "value": "az-t-net-vn01"
+      },
+      "subnetName": {
+        "value": "az-d-app-sn02"
+      },
+      "domainJoinUsername": {
+        "value": ""
+      },
+      "domainJoinPassword": {
+        "reference":{
+          "keyVault": {
+            "id": ""
+          },
+          "secretName": ""
+        }
+      },
+      "domainFQDN": {
+        "value": ""
+      },
+      "ouPath": {
+        "value": ""
+      }
+
+    }
+  }

@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "tagging":{
+        "value": {
+          "CostCenter": "AVDTEST",
+          "Environment": "Test"
+        }
+    },      
+      "workspacesname": {
+        "value": "vdws-whisky-weu-h-avd-01"
+      },
+      "description": {
+        "value": "whisky DevTest Workspace"
+      },
+      "friendlyName": {
+        "value": "whisky DevTest Workspace - West Europe"
+      }
+    }
+  }

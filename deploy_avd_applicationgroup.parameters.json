@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "tagging":{
+        "value": {
+          "CostCenter": "AVDTEST",
+          "Environment": "Test"
+        }
+    },      
+      "applicationgroupname": {
+        "value": "vdag-whisky-weu-d-avd-testpoc-01"
+      },
+      "kind": {
+        "value": "Desktop"
+      },
+      "description": {
+        "value": "whisky DevTest multisession desktop for POC"
+      },
+      "friendlyName": {
+        "value": "whisky DevTest multisession desktop for POC"
+      },
+      "applicationGroupType": {
+        "value": "Desktop"
+      },
+      "hostPoolArmPath": {
+        "value": ""
+      } 
+    }
+  }

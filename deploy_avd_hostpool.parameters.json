@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "tagging":{
+        "value": {
+          "CostCenter": "AVDTEST",
+          "Environment": "Test"
+        }
+    },      
+      "hostpool_name": {
+        "value": "vdpool-whisky-weu-h-avd-01"
+      },
+      "managedPrivateUDP": {
+        "value": "Default"
+      },
+      "directUDP": {
+        "value": "Default"
+      },
+      "publicUDP": {
+        "value": "Default"
+      },
+      "relayUDP": {
+        "value": "Default"
+      },
+      "managementType": {
+        "value": "Standard"
+      },
+      "friendlyName": {
+        "value": "whisky DevTest multisession desktop for POC"
+      },
+      "description": {
+        "value": "whisky DevTest multisession desktop for POC"
+      },
+      "hostPoolType": {
+        "value": "Pooled"
+      },
+      "customRdpProperty": {
+        "value": "drivestoredirect:s:*;audiomode:i:0;videoplaybackmode:i:1;redirectclipboard:i:1;redirectprinters:i:1;devicestoredirect:s:*;redirectcomports:i:1;redirectsmartcards:i:1;usbdevicestoredirect:s:*;enablecredsspsupport:i:1;audiocapturemode:i:1;use multimon:i:1;camerastoredirect:s:*;"
+      },
+      "maxSessionLimit": {
+        "value": 4
+      },
+      "loadBalancerType": {
+        "value": "BreadthFirst"
+      },
+      "validationEnvironment": {
+        "value": false
+      },
+      "vmTemplate": {
+        "value": ""
+      },
+      "preferredAppGroupType": {
+        "value": "Desktop"
+      },
+      "startVMOnConnect": {
+        "value": true
+      }
+    }
+  }
